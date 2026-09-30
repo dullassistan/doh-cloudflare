@@ -1,0 +1,17 @@
+# Consistent end-of-line policy.
+# Windows project (.NET/etc.): text files are CRLF in the working tree.
+# Git stores LF in the index and checks out CRLF (eol=crlf).
+* text=auto eol=crlf
+
+# POSIX shell scripts must stay LF.
+*.sh text eol=lf
+
+# Binary assets: never touched by EOL conversion.
+*.dll  binary
+*.exe  binary
+*.ico  binary
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.webp binary
+*.zip  binary
