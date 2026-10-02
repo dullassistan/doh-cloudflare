@@ -24,3 +24,6 @@ jobs:
 
     - name: Build Release
       run: dotnet build DOH_COMSS.csproj --configuration Release --no-restore
+
+    - name: Run Tests
+      run: dotnet test Tests/DohCloudflare.Tests/DohCloudflare.Tests.csproj --configuration Release
